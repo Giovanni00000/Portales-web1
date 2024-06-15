@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media</h1>
+    <video controls>
+<source src="https://www.w3schools.com/html/movie.mp4"type="video/mp4">
+<source src="https://www.w3schools.com/html/movie.ogg"type="video/ogg">
+
+
+
+    </video>
+    </body>
+    </html>
+<br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w-TkXqSDsW4?si=1ngvTBM7CVrzdcez"></iframe>
+
+
+    <h2>Audio</h2>
+    <audio controls autoplay loop>
+        <source src="Cosmic - Lish Grooves.mp3" type="audio/mp3">
+
+    </audio>
+
+
+    <h2>Formularios</h2>
+       <form action="Media.html" method="GET">
+
+        <label for="txtNombre">Nombre: </label>
+        <input id="txtNombre" name="" type="text" placeholder="Nombre completo"/>
+       </br>
+       <label for="txtEmail" name="email" type="email" aria-placeholder="tucorreo@aqui.com"></label>
+    <br/>
+
+<label for="txtpassword">Contrasena</label>
+<input id="txtpassword" name="password" type="password" title=" 8 letras,1 mayuscula, 1 numero y un caracter especial"
+pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$
+"/>
+
+<br/>
+<br/>
+<label>Tema</label>
+<br/>
+<div>
+
+<input name="opctema" value="Dark" id="opcDark" type="radio">
+<label for="opcDark">Dark</label>
+
+<input name="opctema" value="Light" id="opLight" type="radio">
+<label for="opcLight">Light</label>
+
+<input name="opctema" value="Defined by OS" id="opcOS" type="radio">
+<label for="opcOS">Defined by OS</label>
+
+
+</div>
+
+
+
+<fieldset>
+
+  <legend>Opciones</legend>
+  <label for="chkSharetofriends">Compartir con amigos</label> 
+  <input type="checkbox" value="1" name="Sharewithstrangers"/>
+  <br/>
+
+  <label for="chkSharetostrangers">Compartir con todos</label> 
+  <input type="checkbox" value="1" name="Sharewithstrangers"/>
+
+</fieldset>
+
+<label for="cmbCiudad">
+    <select id="cmbCiudad" name="Ciudad">
+<option value="1"selected>Tegucigalpa</option>
+<option value="2">Danli</option>
+<option value="3">San pedro sula</option>
+<option value="4">Choluteca</option>
+<option value="5">Juticalpa</option>
+<option value="6">Santa rosa de copan</option>
+<option value="7">Trujillo</option>
+</label>
+    </select>
+
+    <br/>
+
+    <label for="txtBlog">Entrada de Blog</label><br/>
+    <textarea id="txtBlog" name="Blog" placeholder="Escribe algo" cols="80" rows="10"></textarea>
+    
+
+
+<br/>
+
+    <button name="btnEnviar" type="submit">Enviar</button>
+    <button name="btnLimpiar" type="reset">Limpiar</button>
+    <button name="Unboton"type="button">Un boton</button>
+
+
+
+       </form> 
+    
+
+</body>
+</html>

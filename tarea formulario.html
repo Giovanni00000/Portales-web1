@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Pedido de pizza</h1>
+    <fieldset>
+
+        <legend>La pizza</legend>
+        <br/>
+        <legend>Ingredientes</legend>
+        <br/>
+        <label for="chkqueso">Queso</label> 
+        <input type="checkbox" value="1" name="Queso"/>
+        <br/>
+      
+        <label for="chkpimiento">Pimientos</label> 
+        <input type="checkbox" value="1" name="Pimientos"/>
+        <br/>
+
+        <label for="chkcebolla">Cebolla</label> 
+        <input type="checkbox" value="1" name="Cebolla"/>
+
+        <br/>
+        <br/>
+        <legend> Tamaño</legend>
+        <br/>
+        <div>
+            <input name="opctam" value="Pequeña" id="opcpe" type="radio">
+            <label for="opcpe">Pequeña</label>
+
+            <input name="opctam" value="Mediana" id="opcmed" type="radio">
+            <label for="opcmed">Mediana</label>
+
+            <input name="opctam" value="Grande" id="opcgran" type="radio">
+            <label for="opcgran">Grande</label>
+
+
+        </div>
+        
+
+
+
+      </fieldset>
+
+      <br/>
+      <fieldset>
+
+        <legend>Datos de entrega</legend>
+        <form action="tarea formulario.html" method="GET">
+
+            <label for="txtNombre">Nombre: </label>
+            <input id="txtNombre" name="" type="text" placeholder="Nombre completo"/>
+           </br>
+           <br/>
+           <label for="txtdireccion">Direccion: </label>
+           <input id="txtdireccion" name="" type="text" placeholder="Direccion del pedido"/>
+           <br/>
+           <br/>
+           <label for="txtnumero">Numero telefonico: </label>
+            <input id="txtnumero" name="" type="tel" placeholder="Numero telefonico" pattern="[0-9]+" inputmode="numeric" required/>
+            <br/>
+            <br/>
+            <label for="txtinst">Instrucciones adicionales: </label><br/>
+            <textarea id="txtinst" name="" placeholder="Escribe algo" cols="80" rows="10"></textarea>
+
+
+      </fieldset>
+      <br/>
+      <fieldset>
+<legend>Metodo de pago</legend>
+<label for="cmbpago">Elija su metodo de pago: </label>
+<select id="cmbpago" name="Metodo de pago">
+    <option value="1"selected>Select</option>
+    <option value="2">Efectivo</option>
+    <option value="3">Tarjeta</option>
+
+
+</select>
+
+      </fieldset>
+<br/>
+      <button name="btnEnviar" type="submit">Enviar</button>
+    <button name="btnLimpiar" type="reset">Limpiar</button>
+</body>
+</html>

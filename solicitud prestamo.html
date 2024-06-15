@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Préstamo</title>
+</head>
+<body>
+    <h1>Formulario de Solicitud de Préstamo</h1>
+    <form>
+        
+        <label for="nombreCompleto">Nombre completo:</label>
+        <input id="nombreCompleto" name="nombreCompleto" type="text" placeholder="Nombre completo" required><br><br>
+
+        
+        <label for="email">Dirección de correo electrónico:</label>
+        <input id="email" name="email" type="email" placeholder="Correo electrónico" required><br><br>
+
+        
+        <label for="telefono">Número de teléfono:</label>
+        <input id="telefono" name="telefono" type="tel" placeholder="Número de teléfono" pattern="[0-9]+" inputmode="numeric" required><br><br>
+
+        
+        <label for="direccion">Dirección actual:</label>
+        <input id="direccion" name="direccion" type="text" placeholder="Dirección actual" required><br><br>
+
+        
+        <label for="ciudad">Ciudad:</label>
+        <input id="ciudad" name="ciudad" type="text" placeholder="Ciudad" required><br><br>
+
+        
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value=""selected>Seleccione un estado(Departamento)</option>
+            <option value="estado1">Francisco Morazan</option>
+            <option value="estado2">Cortes</option>
+            <option value="estado3">Copan</option>
+            <option value="estado4">Comayagua</option>
+            <option value="estado5">Colon</option>
+            <option value="estado6">Valle</option>
+            <option value="estado7">Gracias a Dios</option>
+            <option value="estado8">Olancho</option>
+            <option value="estado9">Islas de la Bahia</option>
+            <option value="estado10">Lempira</option>
+            <option value="estado11">La Paz</option>
+            <option value="estado12">Yoro</option>
+            <option value="estado13">Atlantida</option>
+            <option value="estado14">El Paraiso</option>
+            <option value="estado15">Choluteca</option>
+            <option value="estado16">Santa Barbara</option>
+            <option value="estado17">Intibuca</option>
+            <option value="estado18">Ocotepeque</option>
+            
+        </select><br><br>
+
+        
+        <label for="codigoPostal">Código postal:</label>
+        <input id="codigoPostal" name="codigoPostal" type="text" placeholder="Código postal" pattern="[0-9]+" inputmode="numeric" required><br><br>
+
+        
+        <label>Nivel de educación actual:</label><br>
+        <input id="preparatoria" name="educacion" type="radio" value="Preparatoria" required>
+        <label for="preparatoria">Preparatoria</label><br>
+        <input id="licenciatura" name="educacion" type="radio" value="Licenciatura" required>
+        <label for="licenciatura">Licenciatura</label><br>
+        <input id="maestria" name="educacion" type="radio" value="Maestría" required>
+        <label for="maestria">Maestría</label><br>
+        <input id="doctorado" name="educacion" type="radio" value="Doctorado" required>
+        <label for="doctorado">Doctorado</label><br><br>
+
+        
+        <label>Programa de estudio:</label><br>
+        <input id="computacion" name="programa" type="radio" value="Ciencias de la Computación" required>
+        <label for="computacion">Ciencias de la Computación</label><br>
+        <input id="ingenieriain" name="programa" type="radio" value="Ingenieríaindustrial" required>
+        <label for="ingenieria">Ingeniería industrial</label><br>
+        <input id="economia" name="programa" type="radio" value="Economía" required>
+        <label for="economia">Economía</label><br>
+        <input id="artes" name="programa" type="radio" value="Artes" required>
+        <label for="artes">Artes</label><br>
+        <input id="otro" name="programa" type="radio" value="Otro" required>
+        <label for="otro">Otro</label><br><br>
+
+        
+        <label for="montoPrestamo">Monto del préstamo solicitado:</label>
+        <input id="montoPrestamo" name="montoPrestamo" type="text" placeholder="Monto del préstamo" pattern="[0-9]+" inputmode="numeric" required><br><br>
+
+        
+        <label for="razonPrestamo">Razón para solicitar el préstamo:</label><br>
+        <textarea id="razonPrestamo" name="razonPrestamo" placeholder="Explique la razón para solicitar el préstamo" rows="4" cols="50" required></textarea><br><br>
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
